@@ -43,7 +43,7 @@ function post(parent, args, context, info) {
     })
 }
 
-function vote(parent, args, context, info) {
+async function vote(parent, args, context, info) {
     const userId = getUserId(context)
     const linkExists = await context.prisma.$exists.vote({
         user: { id: userId },
