@@ -13,7 +13,7 @@ const resolvers = {
     Subscription,
     Vote,
     User,
-    Link
+    Link,
 }
 
 // 3
